@@ -16,19 +16,21 @@ Rehlati lets users browse curated Saudi destinations, search by name, and dive i
 
 ## 🖼️ Screenshots
 
-| Home | Recommended List | Search |
-|---|---|---|
-|(<img width="444" height="855" alt="Screenshot 2026-08-30 at 3 29 24 PM" src="https://github.com/user-attachments/assets/3741f0ad-7ed1-43f1-86eb-d5a8469d38dc" />
-) |(<img width="449" height="864" alt="Screenshot 2026-08-30 at 3 30 03 PM" src="https://github.com/user-attachments/assets/d635f5a9-be42-4360-bd4b-0a3bf6b485e0" />
-) |(<img width="461" height="860" alt="Screenshot 2026-08-30 at 3 30 47 PM" src="https://github.com/user-attachments/assets/e8ca7592-5c4b-4e32-8104-146cd742d324" />
-) |
+## 🖼️ Screenshots
 
-| AlUla Details | Diriyah Details | Edge of the World Details |
-|---|---|---|
-| <img width="450" height="849" alt="Screenshot 2026-08-30 at 3 31 07 PM" src="https://github.com/user-attachments/assets/e2b486a1-96af-4855-817b-5d9815783d77" />
-| <img width="444" height="854" alt="Screenshot 2026-08-30 at 3 31 28 PM" src="https://github.com/user-attachments/assets/8708823f-9987-45dc-a17f-d8603daffb6b" />
- | <img width="445" height="847" alt="Screenshot 2026-08-30 at 3 31 51 PM" src="https://github.com/user-attachments/assets/8cd1ef55-c2e4-4ac6-87fc-eb9a0d169acd" />
- |
+<p align="center">
+  <img <img width="444" height="855" alt="Screenshot 2026-08-30 at 3 29 24 PM" src="https://github.com/user-attachments/assets/7e37db9a-ad1c-41db-bd55-fd6003c74d3d" /><img width="461" height="860" alt="Screenshot 2026-08-30 at 3 30 47 PM" src="https://github.com/user-attachments/assets/162c2f5f-d48a-4688-864f-15cb3a4fe921" />
+<img width="449" height="864" alt="Screenshot 2026-08-30 at 3 30 03 PM" src="https://github.com/user-attachments/assets/63e9361d-fb96-4efd-b1a5-cd8e08cceea6" />
+ width="200" />
+  <img src="screenshots/recommended.png" width="200" />
+  <img src="screenshots/search.png" width="200" />
+</p>
+
+<p align="center">
+  <img src="screenshots/details-alula.png" width="200" />
+  <img src="screenshots/details-diriyah.png" width="200" />
+  <img src="screenshots/details-edge.png" width="200" />
+</p>
 
 ---
 
