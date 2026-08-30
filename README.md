@@ -25,9 +25,13 @@ A Flutter travel app for exploring must-see spots across Saudi Arabia — Projec
 
 ## Screenshots
 
-| Home Screen | Details Screen |
-|---|---|
-| ![Home](screenshots/home.png) | ![Details](screenshots/details.png) |
+<img width="461" height="860" alt="Screenshot 2026-08-30 at 3 30 47 PM" src="https://github.com/user-attachments/assets/80c13298-eee5-4249-b207-948ac6746c25" />
+<img width="450" height="849" alt="Screenshot 2026-08-30 at 3 31 07 PM" src="https://github.com/user-attachments/assets/dbccff5c-19c1-4c75-8871-f21cc563baa1" />
+<img width="444" height="854" alt="Screenshot 2026-08-30 at 3 31 28 PM" src="https://github.com/user-attachments/assets/754deea6-28ce-4fff-86c7-a078b0d47b50" />
+<img width="445" height="847" alt="Screenshot 2026-08-30 at 3 31 51 PM" src="https://github.com/user-attachments/assets/de3951c7-e4a3-4e97-aa33-21db229583a0" />
+<img width="444" height="855" alt="Screenshot 2026-08-30 at 3 29 24 PM" src="https://github.com/user-attachments/assets/1fe06f13-d00b-4e1a-9bd2-1295e73455db" />
+<img width="449" height="864" alt="Screenshot 2026-08-30 at 3 30 03 PM" src="https://github.com/user-attachments/assets/db05eb06-f25e-4a86-9992-f5d6b92d6755" />
+
 
 ## Project Structure
 
