@@ -18,14 +18,17 @@ Rehlati lets users browse curated Saudi destinations, search by name, and dive i
 
 | Home | Recommended List | Search |
 |---|---|---|
-| ![Home](<img width="444" height="855" alt="Screenshot 2026-08-30 at 3 29 24 PM" src="https://github.com/user-attachments/assets/3741f0ad-7ed1-43f1-86eb-d5a8469d38dc" />
-) | ![Recommended](<img width="449" height="864" alt="Screenshot 2026-08-30 at 3 30 03 PM" src="https://github.com/user-attachments/assets/d635f5a9-be42-4360-bd4b-0a3bf6b485e0" />
-) | ![Search](<img width="461" height="860" alt="Screenshot 2026-08-30 at 3 30 47 PM" src="https://github.com/user-attachments/assets/e8ca7592-5c4b-4e32-8104-146cd742d324" />
+|(<img width="444" height="855" alt="Screenshot 2026-08-30 at 3 29 24 PM" src="https://github.com/user-attachments/assets/3741f0ad-7ed1-43f1-86eb-d5a8469d38dc" />
+) |(<img width="449" height="864" alt="Screenshot 2026-08-30 at 3 30 03 PM" src="https://github.com/user-attachments/assets/d635f5a9-be42-4360-bd4b-0a3bf6b485e0" />
+) |(<img width="461" height="860" alt="Screenshot 2026-08-30 at 3 30 47 PM" src="https://github.com/user-attachments/assets/e8ca7592-5c4b-4e32-8104-146cd742d324" />
 ) |
 
 | AlUla Details | Diriyah Details | Edge of the World Details |
 |---|---|---|
-| ![AlUla](screenshots/details-alula.png) | ![Diriyah](screenshots/details-diriyah.png) | ![Edge of the World](screenshots/details-edge.png) |
+| <img width="450" height="849" alt="Screenshot 2026-08-30 at 3 31 07 PM" src="https://github.com/user-attachments/assets/e2b486a1-96af-4855-817b-5d9815783d77" />
+| <img width="444" height="854" alt="Screenshot 2026-08-30 at 3 31 28 PM" src="https://github.com/user-attachments/assets/8708823f-9987-45dc-a17f-d8603daffb6b" />
+ | <img width="445" height="847" alt="Screenshot 2026-08-30 at 3 31 51 PM" src="https://github.com/user-attachments/assets/8cd1ef55-c2e4-4ac6-87fc-eb9a0d169acd" />
+ |
 
 ---
 
