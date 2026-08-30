@@ -31,16 +31,16 @@ A Flutter travel app for exploring must-see spots across Saudi Arabia — Projec
 
 ## Project Structure
 lib/
-data/
-places_data.dart
-screens/
-home_screen.dart
-details_screen.dart
-theme/
-app_colors.dart
-widgets/
-recommended_card.dart
-main.dart
+  data/
+    places_data.dart
+  screens/
+    home_screen.dart
+    details_screen.dart
+  theme/
+    app_colors.dart
+  widgets/
+    recommended_card.dart
+  main.dart
 
 
 ## Getting Started
