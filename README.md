@@ -18,7 +18,10 @@ Rehlati lets users browse curated Saudi destinations, search by name, and dive i
 
 | Home | Recommended List | Search |
 |---|---|---|
-| ![Home](screenshots/home.png) | ![Recommended](screenshots/recommended.png) | ![Search](screenshots/search.png) |
+| ![Home](<img width="444" height="855" alt="Screenshot 2026-08-30 at 3 29 24 PM" src="https://github.com/user-attachments/assets/3741f0ad-7ed1-43f1-86eb-d5a8469d38dc" />
+) | ![Recommended](<img width="449" height="864" alt="Screenshot 2026-08-30 at 3 30 03 PM" src="https://github.com/user-attachments/assets/d635f5a9-be42-4360-bd4b-0a3bf6b485e0" />
+) | ![Search](<img width="461" height="860" alt="Screenshot 2026-08-30 at 3 30 47 PM" src="https://github.com/user-attachments/assets/e8ca7592-5c4b-4e32-8104-146cd742d324" />
+) |
 
 | AlUla Details | Diriyah Details | Edge of the World Details |
 |---|---|---|
