@@ -13,10 +13,15 @@ A Flutter travel app for exploring must-see spots across Saudi Arabia — Projec
 ## Design
 
 - **Color Palette** — a dusty/brown desert theme:
-  - Sand/cream background `#F5EFE6`
-  - Terracotta brown `#8B5E3C`
-  - Dusty tan/gold `#C9A66B`
-  - Espresso brown (text) `#3E2723`
+
+  ![#F5EFE6](https://via.placeholder.com/15/F5EFE6/F5EFE6.png) Sand/cream background `#F5EFE6`
+  
+  ![#8B5E3C](https://via.placeholder.com/15/8B5E3C/8B5E3C.png) Terracotta brown `#8B5E3C`
+  
+  ![#C9A66B](https://via.placeholder.com/15/C9A66B/C9A66B.png) Dusty tan/gold `#C9A66B`
+  
+  ![#3E2723](https://via.placeholder.com/15/3E2723/3E2723.png) Espresso brown (text) `#3E2723`
+
 - **Font** — [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) (via `google_fonts`) used for the app title and section headers
 
 ## Widgets Used
