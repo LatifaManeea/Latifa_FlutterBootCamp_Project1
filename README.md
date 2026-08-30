@@ -117,4 +117,4 @@ flutter run
 
 ---
 
-*Made with 🤎 for Flutter Bootcamp Project 1*
+Made with 🤎 by Latifa Almaneea for Flutter Bootcamp Project 1
