@@ -16,16 +16,28 @@ Rehlati lets users browse curated Saudi destinations, search by name, and dive i
 
 ## 🖼️ Screenshots
 
+*Swipe through the sand, dive into the details — here's Rehlati in action.*
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/25929e88-3bf2-47ae-800c-4e3858bc7fd8" width="200" />
+  <img src="https://github.com/user-attachments/assets/25929e88-3bf2-47ae-800c-4e3858bc7fd8" width="200" /><br/>
+  <sub>🏠 Home — where the journey begins</sub>
+</p>
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/5eca67d0-dfe5-49b2-a88c-ee5b433ccd70" width="200" />
   <img src="https://github.com/user-attachments/assets/ab9ad75e-04a9-4659-91d4-d42bb56c51bd" width="200" />
+</p>
+<p align="center">
+  <sub>📜 Scroll for more &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔍 Find it fast</sub>
 </p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/adb7a8f1-3fa3-484f-87fe-3c01c6f66180" width="200" />
   <img src="https://github.com/user-attachments/assets/e8eca12d-f253-4fdf-91b8-d1ac3915b17c" width="200" />
   <img src="https://github.com/user-attachments/assets/ac39606a-48e2-42f9-9244-a7c1e20a8e96" width="200" />
+</p>
+<p align="center">
+  <sub>🏜️ AlUla &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏛️ Diriyah &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌄 Edge of the World</sub>
 </p>
 
 ---
