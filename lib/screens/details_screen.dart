@@ -4,10 +4,7 @@ import 'package:latifa_almaneea_project1/model/place_model.dart';
 import '../theme/app_colors.dart';
  
 class DetailsScreen extends StatelessWidget {
-  // WHY: a single typed parameter instead of Map<String, dynamic> place.
-  // This is exactly the pattern the assignment shows as an example:
-  // "CourseModel courseModel;" - pass one typed object with everything
-  // the screen needs, instead of several loose values or an untyped Map.
+
   final PlaceModel placeModel;
  
   const DetailsScreen({super.key, required this.placeModel});
@@ -16,10 +13,7 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
- 
-    // WHY this line got simpler: the model's fromJson() already guaranteed
-    // highlights is a List<String>, so there's no need to re-parse or
-    // fall back with `?? []` here anymore - PlaceModel already did that work.
+
     final List<String> highlights = placeModel.highlights;
  
     return Scaffold(
