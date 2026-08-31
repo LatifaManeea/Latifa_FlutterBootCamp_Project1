@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:latifa_almaneea_project1/model/place_model.dart';
 import '../theme/app_colors.dart';
 
 class RecommendedCard extends StatefulWidget {
-  final Map<String, dynamic> place;
+  final PlaceModel place;
   final double width;
   final VoidCallback onExplore;
 
@@ -51,7 +52,7 @@ class _RecommendedCardState extends State<RecommendedCard> {
                   SizedBox(
                     width: 140,
                     height: 140,
-                    child: Image.network(widget.place["image"]!, fit: BoxFit.cover),
+                    child: Image.network(widget.place.image, fit: BoxFit.cover),
                   ),
                   Expanded(
                     child: Container(
@@ -62,7 +63,7 @@ class _RecommendedCardState extends State<RecommendedCard> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            widget.place["name"]!,
+                            widget.place.name,
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -71,7 +72,7 @@ class _RecommendedCardState extends State<RecommendedCard> {
                           ),
                           const SizedBox(height: 6),
                           Text(
-                            widget.place["description"]!,
+                            widget.place.description,
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(fontSize: 12, color: AppColors.textLight),

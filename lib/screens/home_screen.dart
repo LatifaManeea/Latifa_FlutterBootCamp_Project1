@@ -1,36 +1,52 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:latifa_almaneea_project1/model/place_model.dart';
 import '../data/places_data.dart';
 import '../theme/app_colors.dart';
 import '../widgets/recommended_card.dart';
 import 'details_screen.dart';
-
+ 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
-
+ 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
-
+ 
 class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
   bool isSearching = false;
   String searchQuery = "";
+ 
 
+  List<PlaceModel> places = [];
+ 
+ //runs exactly once, right when the screen is first created, before build() runs.
+  @override
+  void initState() {
+    super.initState();
+    getData();
+  }
+ 
+  void getData() {
+    for (var item in placesData) {
+      places.add(PlaceModel.fromJson(item));
+    }
+  }
+ 
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-
-    
+ 
     final filteredPlaces = places.where((place) {
-      return place["name"].toString().toLowerCase().contains(searchQuery.toLowerCase());
+      return place.name.toLowerCase().contains(searchQuery.toLowerCase());
     }).toList();
-
+ 
     final popularPlace = places[0];
     final recommendedPlaces = filteredPlaces.length > 1
         ? filteredPlaces.sublist(filteredPlaces.contains(popularPlace) ? 1 : 0)
         : filteredPlaces;
-
+ 
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: AppBar(
@@ -94,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
             buildFeaturedCard(context, popularPlace, screenWidth),
             const SizedBox(height: 28),
           ],
-
+ 
           Text(
             isSearching && searchQuery.isNotEmpty ? 'Search Results' : 'Recommended',
             style: GoogleFonts.playfairDisplay(
@@ -104,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           const SizedBox(height: 12),
-
+ 
           if (recommendedPlaces.isEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 20),
@@ -116,8 +132,14 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             )
           else
-            Column(
-              children: recommendedPlaces.map((place) {
+       
+            // ListView.builder only builds what's visible (plus a small buffer).
+            ListView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: recommendedPlaces.length,
+              itemBuilder: (context, index) {
+                final place = recommendedPlaces[index];
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 16),
                   child: RecommendedCard(
@@ -126,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     onExplore: () => navigateToDetails(context, place),
                   ),
                 );
-              }).toList(),
+              },
             ),
         ],
       ),
@@ -150,8 +172,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-
-  Widget buildFeaturedCard(BuildContext context, Map<String, dynamic> place, double screenWidth) {
+ 
+  Widget buildFeaturedCard(BuildContext context, PlaceModel place, double screenWidth) {
     return Container(
       height: 220,
       width: screenWidth,
@@ -170,7 +192,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            Image.network(place["image"]!, fit: BoxFit.cover),
+            Image.network(place.image, fit: BoxFit.cover),
             Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -188,7 +210,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    place["name"]!,
+                    place.name,
                     style: const TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
@@ -197,7 +219,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    place["description"]!,
+                    place.description,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(fontSize: 13, color: Colors.white70),
@@ -220,13 +242,14 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-
-  void navigateToDetails(BuildContext context, Map<String, dynamic> place) {
+ 
+  void navigateToDetails(BuildContext context, PlaceModel place) {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => DetailsScreen(place: place),
+        builder: (context) => DetailsScreen(placeModel: place),
       ),
     );
   }
 }
+ 

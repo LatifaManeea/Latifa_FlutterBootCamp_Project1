@@ -1,15 +1,19 @@
-List<Map<String, dynamic>> places = [
+// This file holds the RAW JSON data for the app.
+List<Map<String, dynamic>> placesData = [
   {
     "name": "AlUla",
-    "image": "https://magazine-acumen.com/wp-content/uploads/2025/03/acumen-55-city-guide-alula-voyage-desert-unesco-09-1024x683.webp",
-    "description": "A historic destination with ancient ruins, stunning desert landscapes, and unique rock formations.",
+    "image":
+        "https://magazine-acumen.com/wp-content/uploads/2025/03/acumen-55-city-guide-alula-voyage-desert-unesco-09-1024x683.webp",
+    "description":
+        "A historic destination with ancient ruins, stunning desert landscapes, and unique rock formations.",
     "bestTime": "Oct – Mar",
     "category": "Heritage",
     "highlights": ["Hegra Tombs", "Elephant Rock", "AlUla Old Town", "Maraya Concert Hall."],
   },
   {
     "name": "Red Sea Coast",
-    "image": "https://www.visitredsea.com/content/dam/red-sea/en/master/resort/shebara/Shebara-header@2x.jpg/_jcr_content/renditions/cq5dam.web.2880.0.webp",
+    "image":
+        "https://www.visitredsea.com/content/dam/red-sea/en/master/resort/shebara/Shebara-header@2x.jpg/_jcr_content/renditions/cq5dam.web.2880.0.webp",
     "description": "A scenic Red Sea waterfront with sandy beaches and clear waters.",
     "bestTime": "Nov – Apr",
     "category": "Beach",
@@ -17,7 +21,8 @@ List<Map<String, dynamic>> places = [
   },
   {
     "name": "Diriyah",
-    "image": "https://assets-diriyah.diriyah.me/07e7d6e1eaec4a279102afb36551479a?width=3840&quality=80&transform=true&format=webp",
+    "image":
+        "https://assets-diriyah.diriyah.me/07e7d6e1eaec4a279102afb36551479a?width=3840&quality=80&transform=true&format=webp",
     "description": "The historic mud-brick birthplace of the Saudi state, near Riyadh.",
     "bestTime": "Oct – Apr",
     "category": "Heritage",
@@ -40,3 +45,4 @@ List<Map<String, dynamic>> places = [
     "highlights": ["Cliff Hiking", "Sunset Views", "Desert Camping", "Photography"],
   },
 ];
+ 

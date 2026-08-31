@@ -1,18 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:latifa_almaneea_project1/model/place_model.dart';
 import '../theme/app_colors.dart';
-
+ 
 class DetailsScreen extends StatelessWidget {
-  final Map<String, dynamic> place;
-
-  const DetailsScreen({super.key, required this.place});
-
+  // WHY: a single typed parameter instead of Map<String, dynamic> place.
+  // This is exactly the pattern the assignment shows as an example:
+  // "CourseModel courseModel;" - pass one typed object with everything
+  // the screen needs, instead of several loose values or an untyped Map.
+  final PlaceModel placeModel;
+ 
+  const DetailsScreen({super.key, required this.placeModel});
+ 
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
-    final List<String> highlights = List<String>.from(place["highlights"] ?? []);
-
+ 
+    // WHY this line got simpler: the model's fromJson() already guaranteed
+    // highlights is a List<String>, so there's no need to re-parse or
+    // fall back with `?? []` here anymore - PlaceModel already did that work.
+    final List<String> highlights = placeModel.highlights;
+ 
     return Scaffold(
       backgroundColor: AppColors.background,
       body: CustomScrollView(
@@ -26,7 +35,7 @@ class DetailsScreen extends StatelessWidget {
               background: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Image.network(place["image"]!, width: screenWidth, fit: BoxFit.cover),
+                  Image.network(placeModel.image, width: screenWidth, fit: BoxFit.cover),
                   Container(
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
@@ -53,7 +62,7 @@ class DetailsScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
-                      place["category"] ?? "",
+                      placeModel.category,
                       style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
@@ -62,9 +71,9 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 12),
-
+ 
                   Text(
-                    place["name"]!,
+                    placeModel.name,
                     style: GoogleFonts.playfairDisplay(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
@@ -80,7 +89,7 @@ class DetailsScreen extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 20),
-
+ 
                   Container(
                     width: screenWidth,
                     padding: const EdgeInsets.all(16),
@@ -97,7 +106,7 @@ class DetailsScreen extends StatelessWidget {
                           children: [
                             Text('Best Time to Visit', style: TextStyle(fontSize: 12, color: AppColors.textLight)),
                             Text(
-                              place["bestTime"] ?? "",
+                              placeModel.bestTime,
                               style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: AppColors.textDark),
                             ),
                           ],
@@ -106,18 +115,18 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 24),
-
+ 
                   Text(
                     'About this place',
                     style: GoogleFonts.playfairDisplay(fontSize: 18, fontWeight: FontWeight.bold, color: AppColors.textDark),
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    place["description"]!,
+                    placeModel.description,
                     style: TextStyle(fontSize: 15, height: 1.5, color: AppColors.textLight),
                   ),
                   const SizedBox(height: 24),
-
+ 
                   Text(
                     'Highlights',
                     style: GoogleFonts.playfairDisplay(fontSize: 18, fontWeight: FontWeight.bold, color: AppColors.textDark),
@@ -146,7 +155,7 @@ class DetailsScreen extends StatelessWidget {
                     }).toList(),
                   ),
                   const SizedBox(height: 30),
-
+ 
                   SizedBox(
                     width: screenWidth,
                     child: ElevatedButton(
@@ -169,3 +178,4 @@ class DetailsScreen extends StatelessWidget {
     );
   }
 }
+ 
